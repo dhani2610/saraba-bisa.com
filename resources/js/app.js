@@ -1,6 +1,5 @@
 import "./bootstrap";
 import "./alpinejs.min";
-import "./sticky.min";
 
 import Alpine from "alpinejs";
 
@@ -44,8 +43,6 @@ import fintechCard14 from "./components/fintech-card-14";
 // Call Alpine
 window.Alpine = Alpine;
 Alpine.start();
-
-const sticky = new Sticky("[data-sticky]");
 
 // Define Chart.js default settings
 /* eslint-disable prefer-destructuring */
