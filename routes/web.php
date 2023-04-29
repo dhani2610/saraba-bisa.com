@@ -26,8 +26,7 @@ use App\Http\Controllers\TransactionController;
 |
 */
 
-Route::redirect('/', 'login');
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/subscribe', [SubscribeController::class, 'index'])->name('subscribe');
