@@ -149,7 +149,7 @@
                 @click.outside="modalExpanded = false"
                 @keydown.escape.window="modalExpanded = false"
               >
-                <div class="relative pb-9/16">
+                <div class="pb-9/16">
                   <iframe
                     height="315"
                     class="w-full"
@@ -759,10 +759,8 @@
       </div>
     </section>
   </main>
-  <script src="{{ asset('js/sticky.min.js') }}"></script>
   <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
   <script>
-    const sticky = new Sticky("[data-sticky]");
     const carouselEl = document.querySelectorAll(".carousel");
     if (carouselEl.length > 0) {
         const carousel = new Swiper(".carousel", {
