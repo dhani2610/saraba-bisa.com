@@ -429,7 +429,7 @@
           <div class="carousel swiper-container">
             <div class="swiper-wrapper">
               <!-- Carousel items -->
-              <div class="swiper-slide h-auto flex flex-col p-6 rounded">
+              <div class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded">
                 <img
                   class="mb-3"
                   src="<?php echo e(asset('images/fitur-1.svg')); ?>"
@@ -449,7 +449,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -469,7 +469,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -489,7 +489,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -510,7 +510,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -529,7 +529,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -550,7 +550,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -570,7 +570,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -591,7 +591,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -611,7 +611,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -631,7 +631,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -652,7 +652,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -673,7 +673,7 @@
                 </div>
               </div>
               <div
-                class="swiper-slide h-auto flex flex-col p-6 rounded"
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
               >
                 <img
                   class="mb-3"
@@ -699,7 +699,7 @@
           <!-- Arrows -->
           <div class="flex mt-12 space-x-4 justify-end">
             <button
-              class="carousel-prev relative z-20 w-14 h-14 rounded-full flex items-center justify-center group border border-slate-700 bg-slate-800 hover:bg-slate-700 transition duration-150 ease-in-out"
+              class="carousel-prev relative z-20 w-14 h-14 rounded-full flex items-center justify-center group border border-gray-700 bg-gray-800 hover:bg-gray-700 transition duration-150 ease-in-out"
             >
               <span class="sr-only">Previous</span>
               <svg

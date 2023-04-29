@@ -7,8 +7,7 @@
           <!-- Page header -->
           <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h1 class="h1">
-              Selamat datang. Kami siap untuk membantu mengoptimalkan bisnis
-              Anda.
+              Selamat datang. Kami siap untuk mempermudah pencatatan keuangan toko Anda.
             </h1>
           </div>
 
