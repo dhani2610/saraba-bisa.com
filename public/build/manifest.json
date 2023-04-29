@@ -16,7 +16,7 @@
     "src": "public/images/company-icon-04.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-755c960e.css",
+    "file": "assets/app-1868f29b.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -27,7 +27,7 @@
       "assets/company-icon-03-4964b83a.svg",
       "assets/company-icon-04-d05a5457.svg"
     ],
-    "file": "assets/app-fdd428a4.js",
+    "file": "assets/app-2ff7405d.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
