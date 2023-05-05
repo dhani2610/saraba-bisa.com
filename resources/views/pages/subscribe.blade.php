@@ -92,8 +92,9 @@
                     class="form-select w-full text-gray-800"
                     required
                   >
-                    <option value="Paket Premium">Paket Premium (Rp 730.000)</option>
-                    <option value="Paket Basic">Paket Basic (Rp 365.000)</option>
+                  @foreach ($packets as $item)
+                      <option value="{{ $item->id }}">Paket {{ $item->name }} (Rp {{ number_format($item->price) }})</option>
+                  @endforeach
                   </select>
                 </div>
               </div>

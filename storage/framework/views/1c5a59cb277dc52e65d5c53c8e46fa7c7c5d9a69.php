@@ -100,8 +100,9 @@
                     class="form-select w-full text-gray-800"
                     required
                   >
-                    <option value="Paket Premium">Paket Premium (Rp 730.000)</option>
-                    <option value="Paket Basic">Paket Basic (Rp 365.000)</option>
+                  <?php $__currentLoopData = $packets; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                      <option value="<?php echo e($item->id); ?>">Paket <?php echo e($item->name); ?> (Rp <?php echo e(number_format($item->price)); ?>)</option>
+                  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                   </select>
                 </div>
               </div>
