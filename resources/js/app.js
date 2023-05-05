@@ -1,6 +1,4 @@
 import "./bootstrap";
-import "./alpinejs.min";
-import "./sticky.min";
 
 import Alpine from "alpinejs";
 

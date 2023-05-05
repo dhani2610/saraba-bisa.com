@@ -1,0 +1,1 @@
+components.ecommerce.shop-cards-05<?php /**PATH C:\laragon\www\main-saraba-bisa\storage\framework\views/b4241ceb2daf0f167ed11661c86caf25d76979e1.blade.php ENDPATH**/ ?>

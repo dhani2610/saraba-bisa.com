@@ -1,6 +1,6 @@
 <div class="bg-white shadow-lg rounded-sm border border-slate-200">
     <header class="px-5 py-4">
-        <h2 class="font-semibold text-slate-800">All Customers <span class="text-slate-400 font-medium">{{ $count }}</span></h2>
+        <h2 class="font-semibold text-slate-800">Semua Member <span class="text-slate-400 font-medium">{{ $count }}</span></h2>
     </header>
 
     <div x-data="handleSelect">
@@ -19,29 +19,26 @@
                                 </label>
                             </div>
                         </th>
-                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
-                            <span class="sr-only">Favourite</span>
-                        </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Order</div>
+                            <div class="font-semibold text-left">Nama</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                             <div class="font-semibold text-left">Email</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Location</div>
+                            <div class="font-semibold text-left">Nomor HP</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold">Orders</div>
+                            <div class="font-semibold text-left">Nama Toko</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Last order</div>
+                            <div class="font-semibold text-left">Kota</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Total spent</div>
+                            <div class="font-semibold text-left">Paket</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold">Refunds</div>
+                            <div class="font-semibold text-left">Tgl Expired</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                             <span class="sr-only">Menu</span>
@@ -62,40 +59,26 @@
                                     </label>
                                 </div>
                             </td>
-                            <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
-                                <div class="flex items-center relative">
-                                    <button>
-                                        <svg class="w-4 h-4 shrink-0 fill-current @if($customer->fav){{ 'text-amber-500' }}@else{{ 'text-slate-300' }}@endif" viewBox="0 0 16 16">
-                                            <path d="M8 0L6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934h-6L8 0z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="flex items-center">
-                                    <div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
-                                        <img class="rounded-full" src="{{ asset('images/' . $customer->image) }}" width="40" height="40" alt="{{ $customer->name }}" />
-                                    </div>
-                                    <div class="font-medium text-slate-800">{{ $customer->name }}</div>
-                                </div>
+                                <div class="text-left font-medium text-slate-800">{{ $customer->name }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                 <div class="text-left">{{ $customer->email }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="text-left">{{ $customer->location }}</div>
+                                <div class="text-left">{{ $customer->phone_number }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="text-center">{{ $customer->orders }}</div>
+                                <div class="text-left">{{ $customer->store_name }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="text-left font-medium text-sky-500">{{ $customer->last_order }}</div>
+                                <div class="text-left font-medium text-sky-500">{{ $customer->location }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="text-left font-medium text-emerald-500">{{ $customer->spent }}</div>
+                                <div class="text-left font-medium text-emerald-500">{{ $customer->packet->name }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="text-center">@if($customer->refunds > 0){{ $customer->refunds }}@else{{ '-' }}@endif</div>
+                                <div class="text-left font-medium text-red-500">{{ $customer->exp_date }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                                 <button class="text-slate-400 hover:text-slate-500 rounded-full">

@@ -15,8 +15,7 @@
           <!-- Page header -->
           <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h1 class="h1">
-              Selamat datang. Kami siap untuk membantu mengoptimalkan bisnis
-              Anda.
+              Selamat datang. Kami siap untuk mempermudah pencatatan keuangan toko Anda.
             </h1>
           </div>
 
@@ -34,7 +33,7 @@
                     id="name"
                     type="text"
                     class="form-input w-full text-gray-800"
-                    placeholder="Enter your name"
+                    placeholder="Masukkan nama anda"
                     required
                   />
                 </div>
@@ -50,7 +49,7 @@
                     id="email"
                     type="email"
                     class="form-input w-full text-gray-800"
-                    placeholder="Enter your email address"
+                    placeholder="Masukkan alamat email anda"
                     required
                   />
                 </div>
@@ -66,7 +65,7 @@
                     id="email"
                     type="number"
                     class="form-input w-full text-gray-800"
-                    placeholder="Enter your phone number"
+                    placeholder="Masukkan nomor HP anda"
                     required
                   />
                 </div>
@@ -82,7 +81,7 @@
                     id="name"
                     type="text"
                     class="form-input w-full text-gray-800"
-                    placeholder="Enter your store name"
+                    placeholder="Masukkan nama toko anda"
                     required
                   />
                 </div>
@@ -101,8 +100,8 @@
                     class="form-select w-full text-gray-800"
                     required
                   >
-                    <option value="Paket Premium">Paket Premium</option>
-                    <option value="Paket Basic">Paket Basic</option>
+                    <option value="Paket Premium">Paket Premium (Rp 730.000)</option>
+                    <option value="Paket Basic">Paket Basic (Rp 365.000)</option>
                   </select>
                 </div>
               </div>
