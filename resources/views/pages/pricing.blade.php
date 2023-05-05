@@ -1394,5 +1394,4 @@
       </div>
     </section>
   </main>
-  <script src="{{ asset('js/myscript.js') }}"></script>
 </x-guest-layout>

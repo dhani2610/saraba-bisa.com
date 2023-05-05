@@ -113,5 +113,4 @@
       </div>
     </section>
   </main>
-  <script src="{{ asset('js/myscript.js') }}"></script>
 </x-auth-layout>
