@@ -71,7 +71,7 @@
                 <div>
                   <a
                     class="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0"
+                    href="<?php echo e(route('subscribe')); ?>"
                     >Mulai Berlangganan</a
                   >
                 </div>

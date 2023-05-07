@@ -133,7 +133,7 @@
               <div class="border-t border-gray-200 pt-5 mt-6">
                 <a
                   class="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full"
-                  href="#0"
+                  href="{{ route('subscribe') }}"
                   >Mulai Berlangganan</a
                 >
               </div>
@@ -332,7 +332,7 @@
               <div class="border-t border-gray-200 pt-5 mt-6">
                 <a
                   class="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full"
-                  href="#0"
+                  href="{{ route('subscribe') }}"
                   >Mulai Berlangganan</a
                 >
               </div>
