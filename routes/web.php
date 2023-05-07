@@ -28,6 +28,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/subscribe', [SubscribeController::class, 'index'])->name('subscribe');
+Route::post('/subscribe', [SubscribeController::class, 'store'])->name('submit-subscribe');
+Route::get('/checkout', [SubscribeController::class, 'checkout'])->name('checkout');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 

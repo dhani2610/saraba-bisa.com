@@ -7,5 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'name',
+        'email',
+        'phone_number',
+        'store_name',
+        'location',
+        'packets_id',
+        'status'
+    ];
+
+    public function packet()
+    {
+        return $this->belongsTo(Packet::class, 'packets_id', 'id');
+    }
 }

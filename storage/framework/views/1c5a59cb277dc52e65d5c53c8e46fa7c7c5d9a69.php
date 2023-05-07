@@ -21,7 +21,9 @@
 
           <!-- Form -->
           <div class="max-w-sm mx-auto">
-            <form>
+            <form method="POST" action="<?php echo e(route('submit-subscribe')); ?>">
+              <?php echo csrf_field(); ?>
+              <input type="hidden" name="status" value="Pending">
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label
@@ -31,6 +33,7 @@
                   >
                   <input
                     id="name"
+                    name="name"
                     type="text"
                     class="form-input w-full text-gray-800"
                     placeholder="Masukkan nama anda"
@@ -47,6 +50,7 @@
                   >
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     class="form-input w-full text-gray-800"
                     placeholder="Masukkan alamat email anda"
@@ -58,11 +62,12 @@
                 <div class="w-full px-3">
                   <label
                     class="block text-gray-800 text-sm font-medium mb-1"
-                    for="email"
+                    for="phone_number"
                     >Nomor HP/WA <span class="text-red-600">*</span></label
                   >
                   <input
-                    id="email"
+                    id="phone_number"
+                    name="phone_number"
                     type="number"
                     class="form-input w-full text-gray-800"
                     placeholder="Masukkan nomor HP anda"
@@ -74,11 +79,12 @@
                 <div class="w-full px-3">
                   <label
                     class="block text-gray-800 text-sm font-medium mb-1"
-                    for="name"
+                    for="store_name"
                     >Nama Toko <span class="text-red-600">*</span></label
                   >
                   <input
-                    id="name"
+                    id="store_name"
+                    name="store_name"
                     type="text"
                     class="form-input w-full text-gray-800"
                     placeholder="Masukkan nama toko anda"
@@ -90,13 +96,30 @@
                 <div class="w-full px-3">
                   <label
                     class="block text-gray-800 text-sm font-medium mb-1"
-                    for="name"
+                    for="location"
+                    >Asal Kota <span class="text-red-600">*</span></label
+                  >
+                  <input
+                    id="location"
+                    name="location"
+                    type="text"
+                    class="form-input w-full text-gray-800"
+                    placeholder="Masukkan nama kota anda"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-4">
+                <div class="w-full px-3">
+                  <label
+                    class="block text-gray-800 text-sm font-medium mb-1"
+                    for="packets_id"
                     >Pilihan Paket
                     <span class="text-red-600">*</span></label
                   >
                   <select
-                    name=""
-                    id=""
+                    name="packets_id"
+                    id="packets_id"
                     class="form-select w-full text-gray-800"
                     required
                   >
@@ -121,7 +144,6 @@
       </div>
     </section>
   </main>
-  <script src="<?php echo e(asset('js/myscript.js')); ?>"></script>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginal7b6721487b7b8dd63e67398e09f7d70f121b9aa3)): ?>
