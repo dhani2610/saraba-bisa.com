@@ -124,7 +124,7 @@
                     required
                   >
                   <?php $__currentLoopData = $packets; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                      <option value="<?php echo e($item->id); ?>">Paket <?php echo e($item->name); ?> (Rp <?php echo e(number_format($item->price)); ?>)</option>
+                      <option value="<?php echo e($item->id); ?>">Paket <?php echo e($item->name); ?></option>
                   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                   </select>
                 </div>

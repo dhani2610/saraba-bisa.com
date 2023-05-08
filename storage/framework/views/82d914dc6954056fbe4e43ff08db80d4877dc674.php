@@ -137,35 +137,35 @@
                   <li>
                     <a
                       class="flex text-gray-600 hover:text-gray-900 py-2"
-                      href="pricing.html"
+                      href="<?php echo e(route('pricing')); ?>"
                       >Harga</a
                     >
                   </li>
                   <li>
                     <a
                       class="flex text-gray-600 hover:text-gray-900 py-2"
-                      href="about.html"
+                      href="#"
                       >Tentang Kami</a
                     >
                   </li>
                   <li>
                     <a
                       class="flex text-gray-600 hover:text-gray-900 py-2"
-                      href="tutorials.html"
+                      href="#"
                       >Tutorial</a
                     >
                   </li>
                   <li>
                     <a
                       class="flex text-gray-600 hover:text-gray-900 py-2"
-                      href="blog.html"
+                      href="<?php echo e(route('contact')); ?>"
                       >Kontak</a
                     >
                   </li>
                   <li>
                     <a
                       class="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2"
-                      href="signup.html"
+                      href="<?php echo e(route('subscribe')); ?>"
                     >
                       <span>Daftar</span>
                       <svg

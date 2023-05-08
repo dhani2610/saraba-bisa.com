@@ -116,7 +116,7 @@
                     required
                   >
                   @foreach ($packets as $item)
-                      <option value="{{ $item->id }}">Paket {{ $item->name }} (Rp {{ number_format($item->price) }})</option>
+                      <option value="{{ $item->id }}">Paket {{ $item->name }}</option>
                   @endforeach
                   </select>
                 </div>

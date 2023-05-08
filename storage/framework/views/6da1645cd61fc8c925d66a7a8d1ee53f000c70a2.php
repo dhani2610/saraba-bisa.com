@@ -174,7 +174,6 @@
       </div>
     </section>
   </main>  
-  <script src="<?php echo e(asset('js/myscript.js')); ?>"></script>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc3251b308c33b100480ddc8862d4f9c79f6df015)): ?>
