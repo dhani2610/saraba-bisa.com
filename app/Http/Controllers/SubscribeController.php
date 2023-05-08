@@ -20,11 +20,16 @@ class SubscribeController extends Controller
 
         Order::create($data);
 
-        return redirect()->route('checkout');
+        return redirect()->route('register-success');
     }
 
     public function checkout()
     {
         return view('pages/checkout');
+    }
+
+    public function success()
+    {
+        return view('pages/register-success');
     }
 }

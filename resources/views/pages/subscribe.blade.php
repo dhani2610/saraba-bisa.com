@@ -15,7 +15,7 @@
           <div class="max-w-sm mx-auto">
             <form method="POST" action="{{ route('submit-subscribe') }}">
               @csrf
-              <input type="hidden" name="status" value="Pending">
+              <input type="hidden" name="status" value="Belum Diproses">
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label

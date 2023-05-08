@@ -34,15 +34,18 @@
           >
             <!-- Pricing table 1 -->
             <div
-              class="relative flex flex-col h-full py-5 px-6 rounded bg-white shadow-xl"
+              class="relative flex flex-col h-full py-8 px-6 rounded bg-white shadow-xl"
               data-aos="zoom-y-out"
               data-aos-delay="450"
             >
               <div class="mb-4">
-                <div class="text-lg font-bold mb-1">Basic</div>
+                <div class="flex justify-between items-center mb-1">
+                  <div class="text-lg font-bold mb-1">Basic <span class="line-through text-red-600">Rp. 365.000 / tahun</span></div>
+                  <div class="inline-flex px-3 py-1 text-xs font-medium text-green-600 bg-green-200 rounded-full">-20%</div>
+                </div>
                 <div class="inline-flex items-baseline mb-2">
                   <span class="text-3xl font-bold">Rp</span>
-                  <span class="text-4xl font-bold">365.000</span>
+                  <span class="text-4xl font-bold">292.000</span>
                   <span class="text-gray-600 pl-2">/ tahun</span>
                 </div>
                 <div class="text-lg text-gray-800">
@@ -141,8 +144,8 @@
               <div class="border-t border-gray-200 pt-5 mt-6">
                 <a
                   class="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full"
-                  href="#0"
-                  >Mulai Berlangganan</a
+                  href="<?php echo e(route('subscribe')); ?>"
+                  >Mulai Uji Coba Gratis</a
                 >
               </div>
               <div class="pt-5">
@@ -157,7 +160,7 @@
 
             <!-- Pricing table 2 -->
             <div
-              class="relative flex flex-col h-full py-5 px-6 rounded bg-blue-100 shadow-xl border-2 border-blue-500"
+              class="relative flex flex-col h-full py-8 px-6 rounded bg-blue-100 shadow-xl border-2 border-blue-500"
               data-aos="zoom-y-out"
               data-aos-delay="450"
             >
@@ -175,10 +178,13 @@
                 </svg>
               </div>
               <div class="mb-4">
-                <div class="text-lg font-bold mb-1">Premium</div>
+                <div class="flex justify-between items-center mb-1">
+                  <div class="text-lg font-bold mb-1">Premium <span class="line-through text-red-600">Rp. 730.000 / tahun</span></div>
+                  <div class="inline-flex px-3 py-1 text-xs font-medium text-green-600 bg-green-200 rounded-full">-20%</div>
+                </div>
                 <div class="inline-flex items-baseline mb-2">
                   <span class="text-3xl font-bold">Rp</span>
-                  <span class="text-4xl font-bold">730.000</span>
+                  <span class="text-4xl font-bold">584.000</span>
                   <span class="text-gray-600 pl-2">/ tahun</span>
                 </div>
                 <div class="text-lg text-gray-800">
@@ -340,8 +346,8 @@
               <div class="border-t border-gray-200 pt-5 mt-6">
                 <a
                   class="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full"
-                  href="#0"
-                  >Mulai Berlangganan</a
+                  href="<?php echo e(route('subscribe')); ?>"
+                  >Mulai Uji Coba Gratis</a
                 >
               </div>
               <div class="pt-5">
@@ -1402,7 +1408,6 @@
       </div>
     </section>
   </main>
-  <script src="<?php echo e(asset('js/myscript.js')); ?>"></script>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc3251b308c33b100480ddc8862d4f9c79f6df015)): ?>

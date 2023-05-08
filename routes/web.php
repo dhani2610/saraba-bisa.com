@@ -30,6 +30,7 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/subscribe', [SubscribeController::class, 'index'])->name('subscribe');
 Route::post('/subscribe', [SubscribeController::class, 'store'])->name('submit-subscribe');
 Route::get('/checkout', [SubscribeController::class, 'checkout'])->name('checkout');
+Route::get('/register-success', [SubscribeController::class, 'success'])->name('register-success');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
@@ -41,7 +42,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard/analytics', [DashboardController::class, 'analytics'])->name('analytics');
     Route::get('/dashboard/fintech', [DashboardController::class, 'fintech'])->name('fintech');
     Route::get('/ecommerce/customers', [CustomerController::class, 'index'])->name('customers');
-    Route::get('/ecommerce/orders', [OrderController::class, 'index'])->name('orders');
+    Route::get('/transaksi/pendaftaran', [OrderController::class, 'index'])->name('orders');
     Route::get('/ecommerce/invoices', [InvoiceController::class, 'index'])->name('invoices');
     Route::get('/ecommerce/product', function () {
         return view('pages/ecommerce/product');

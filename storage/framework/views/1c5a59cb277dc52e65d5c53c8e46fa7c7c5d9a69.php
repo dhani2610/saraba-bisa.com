@@ -23,7 +23,7 @@
           <div class="max-w-sm mx-auto">
             <form method="POST" action="<?php echo e(route('submit-subscribe')); ?>">
               <?php echo csrf_field(); ?>
-              <input type="hidden" name="status" value="Pending">
+              <input type="hidden" name="status" value="Belum Diproses">
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label

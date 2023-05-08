@@ -7,7 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'name',
+        'email',
+        'phone_number',
+        'store_name',
+        'location',
+        'packets_id',
+        'status',
+        'exp_trial',
+        'exp_subscribe'
+    ];
 
     public function packet()
     {
