@@ -87,6 +87,11 @@
             <div
               class="relative flex flex-col h-full py-8 px-6 rounded bg-white shadow-xl"
             >
+              <div class="absolute top-0 right-0 mr-5 p-3 -mt-5 bg-yellow-500 rounded-full">
+                  <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.145 5.05l-4.316-.627L8.898.513c-.338-.684-1.456-.684-1.794 0l-1.93 3.91-4.317.627a1.002 1.002 0 00-.554 1.707l3.124 3.044-.737 4.3a1 1 0 001.45 1.053L8 13.125l3.862 2.03c.728.381 1.59-.234 1.45-1.054l-.736-4.299L15.7 6.758a1.003 1.003 0 00-.555-1.708z" />
+                  </svg>
+              </div>
               <div class="mb-4">
                 <div class="flex justify-between items-center mb-1">
                   <div class="text-lg font-bold mb-1"><?php echo e($premium->name); ?> <span class="line-through text-red-600">Rp. <?php echo e(number_format($premium->price)); ?> / tahun</span></div>
