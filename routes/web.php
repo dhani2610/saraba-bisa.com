@@ -10,6 +10,8 @@ use App\Http\Controllers\PricingController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\PacketController;
 use App\Http\Controllers\SubscribeController;
 use App\Http\Controllers\TransactionController;
 
@@ -34,6 +36,9 @@ Route::get('/register-success', [SubscribeController::class, 'success'])->name('
 
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+
+    Route::resource('packet', PacketController::class);
+    Route::resource('feature', FeatureController::class);
 
     // Route for the getting the data feed
     Route::get('/json-data-feed', [DataFeedController::class, 'getDataFeed'])->name('json_data_feed');

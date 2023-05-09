@@ -5,18 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Packet extends Model
+class Feature extends Model
 {
     protected $fillable = [
         'name',
-        'price',
         'description',
-        'diskon'
+        'packets_id'
     ];
 
-    public function feature()
+    public function packet()
     {
-        return $this->hasMany(Feature::class, 'packets_id')
-            ->where('id', 'packets_id');
+        return $this->belongsTo(Packet::class, 'packets_id', 'id');
     }
 }

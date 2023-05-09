@@ -315,6 +315,37 @@
                     </li>
                 </ul>
             </div>
+            <!-- More group -->
+            <div>
+                <h3 class="text-xs uppercase text-slate-500 font-semibold pl-3">
+                    <span class="hidden lg:block lg:sidebar-expanded:hidden 2xl:hidden text-center w-6" aria-hidden="true">•••</span>
+                    <span class="lg:hidden lg:sidebar-expanded:block 2xl:block">Master Data</span>
+                </h3>
+                <ul class="mt-3">
+                    <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 <?php if(in_array(Request::segment(1), ['packet'])): ?><?php echo e('bg-slate-900'); ?><?php endif; ?>">
+                        <a class="block text-slate-200 hover:text-white truncate transition duration-150 <?php if(in_array(Request::segment(1), ['packet'])): ?><?php echo e('hover:text-slate-200'); ?><?php endif; ?>" href="<?php echo e(route('packet.index')); ?>">
+                            <div class="flex items-center">
+                                <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                    <path class="fill-current <?php if(in_array(Request::segment(1), ['packet'])): ?><?php echo e('text-indigo-500'); ?><?php else: ?><?php echo e('text-slate-600'); ?><?php endif; ?>" d="M20 7a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 0120 7zM4 23a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 014 23z" />
+                                    <path class="fill-current <?php if(in_array(Request::segment(1), ['packet'])): ?><?php echo e('text-indigo-300'); ?><?php else: ?><?php echo e('text-slate-400'); ?><?php endif; ?>" d="M17 23a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 010-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1zM7 13a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 112 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z" />
+                                </svg>
+                                <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Paket</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 <?php if(in_array(Request::segment(1), ['feature'])): ?><?php echo e('bg-slate-900'); ?><?php endif; ?>">
+                        <a class="block text-slate-200 hover:text-white truncate transition duration-150 <?php if(in_array(Request::segment(1), ['feature'])): ?><?php echo e('hover:text-slate-200'); ?><?php endif; ?>" href="<?php echo e(route('feature.index')); ?>">
+                            <div class="flex items-center">
+                                <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                    <path class="fill-current <?php if(in_array(Request::segment(1), ['feature'])): ?><?php echo e('text-indigo-500'); ?><?php else: ?><?php echo e('text-slate-600'); ?><?php endif; ?>" d="M20 7a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 0120 7zM4 23a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 014 23z" />
+                                    <path class="fill-current <?php if(in_array(Request::segment(1), ['feature'])): ?><?php echo e('text-indigo-300'); ?><?php else: ?><?php echo e('text-slate-400'); ?><?php endif; ?>" d="M17 23a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 010-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1zM7 13a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 112 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z" />
+                                </svg>
+                                <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Fitur</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Expand / collapse button -->
