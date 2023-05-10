@@ -37,6 +37,7 @@ Route::get('/register-success', [SubscribeController::class, 'success'])->name('
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
+    Route::resource('member', CustomerController::class);
     Route::resource('packet', PacketController::class);
     Route::resource('feature', FeatureController::class);
     Route::resource('transaksi/pendaftaran', OrderController::class);
