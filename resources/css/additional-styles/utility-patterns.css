@@ -29,12 +29,13 @@
 .btn,
 .btn-lg,
 .btn-sm,
+.btn-custom,
 .btn-xs {
     @apply font-medium text-sm inline-flex items-center justify-center border border-transparent rounded leading-5 shadow-sm transition duration-150 ease-in-out;
 }
 
 .btn {
-    @apply px-8 py-3;
+    @apply px-3 py-2;
 }
 
 .btn-lg {
@@ -47,6 +48,10 @@
 
 .btn-xs {
     @apply px-2 py-0.5;
+}
+
+.btn-custom {
+    @apply px-8 py-3;
 }
 
 /* Forms */

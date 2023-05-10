@@ -752,7 +752,7 @@
               <!-- CTA button -->
               <div>
                 <a
-                  class="btn text-blue-600 bg-gradient-to-r from-blue-100 to-white"
+                  class="btn-custom text-blue-600 bg-gradient-to-r from-blue-100 to-white"
                   href="https://wa.me/6281938960028"
                   target="_blank"
                   >Hubungi Admin</a

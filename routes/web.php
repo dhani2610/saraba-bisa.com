@@ -39,6 +39,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::resource('packet', PacketController::class);
     Route::resource('feature', FeatureController::class);
+    Route::resource('transaksi/pendaftaran', OrderController::class);
 
     // Route for the getting the data feed
     Route::get('/json-data-feed', [DataFeedController::class, 'getDataFeed'])->name('json_data_feed');
@@ -47,7 +48,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard/analytics', [DashboardController::class, 'analytics'])->name('analytics');
     Route::get('/dashboard/fintech', [DashboardController::class, 'fintech'])->name('fintech');
     Route::get('/ecommerce/customers', [CustomerController::class, 'index'])->name('customers');
-    Route::get('/transaksi/pendaftaran', [OrderController::class, 'index'])->name('orders');
+    // Route::get('/transaksi/pendaftaran', [OrderController::class, 'index'])->name('orders');
     Route::get('/ecommerce/invoices', [InvoiceController::class, 'index'])->name('invoices');
     Route::get('/ecommerce/product', function () {
         return view('pages/ecommerce/product');

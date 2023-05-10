@@ -62,14 +62,14 @@
               >
                 <div>
                   <a
-                    class="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
+                    class="btn-custom text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
                     href="{{ route('subscribe') }}"
                     >Mulai Uji Coba Gratis</a
                   >
                 </div>
                 <div>
                   <a
-                    class="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+                    class="btn-custom text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
                     href="https://demo.saraba-bisa.com/login"
                     target="_blank"
                     >Coba Demo</a
@@ -748,7 +748,7 @@
               <!-- CTA button -->
               <div>
                 <a
-                  class="btn text-blue-600 bg-gradient-to-r from-blue-100 to-white"
+                  class="btn-custom text-blue-600 bg-gradient-to-r from-blue-100 to-white"
                   href="{{ route('pricing') }}"
                   >Lihat Paket</a
                 >
