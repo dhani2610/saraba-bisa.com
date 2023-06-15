@@ -307,6 +307,37 @@
                 <!-- Row -->
                 <tr class="border-t border-gray-200">
                   <td class="text-sm sm:text-base pr-2 py-4">
+                    <div class="font-medium underline">Transaksi Produk Sistem Point of Sales (POS)</div>
+                    <div class="text-gray-600">
+                      Penjualan produk menggunakan sistem POS dengan fitur diskon, pencetakan satu nota dengan banyak item produk, pengelolaan transaksi pembayaran lunas dan tempo
+                    </div>
+                  </td>
+                  <td class="text-sm px-2 py-4 text-center font-medium">
+                    <svg
+                      class="w-3 h-3 fill-current text-green-500 inline-flex"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"
+                      />
+                    </svg>
+                  </td>
+                  <td class="text-sm px-2 py-4 text-center font-medium">
+                    <svg
+                      class="w-3 h-3 fill-current text-green-500 inline-flex"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <!-- Row -->
+                <tr class="border-t border-gray-200">
+                  <td class="text-sm sm:text-base pr-2 py-4">
                     <div class="font-medium underline">
                       Pelacakan status servis
                     </div>

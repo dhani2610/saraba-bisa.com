@@ -4,45 +4,17 @@
 
         <!-- Left: Title -->
         <div class="mb-4 sm:mb-0">
-            <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">Pendaftaran ✨</h1>
+            <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">Pembayaran ✨</h1>
         </div>
 
         <!-- Right: Actions -->
         <div class="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
 
             <!-- Dropdown -->
-            <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
-<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.date-select','data' => []] + (isset($attributes) ? (array) $attributes->getIterator() : [])); ?>
-<?php $component->withName('date-select'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
-<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
-<?php endif; ?>
-<?php $component->withAttributes([]); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
-<?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
-<?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
-<?php endif; ?>
+            <x-date-select />
 
             <!-- Search form -->
-            <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
-<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.search-form','data' => ['placeholder' => 'Masukkan nama pendaftar']] + (isset($attributes) ? (array) $attributes->getIterator() : [])); ?>
-<?php $component->withName('search-form'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
-<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
-<?php endif; ?>
-<?php $component->withAttributes(['placeholder' => 'Masukkan nama pendaftar']); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
-<?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
-<?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
-<?php endif; ?>
+            <x-search-form placeholder="Masukkan nama pendaftar" />
 
             <!-- Add order button -->
             <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
@@ -58,7 +30,7 @@
 
     <div class="bg-white shadow-lg rounded-sm border border-slate-200 mb-8">
         <header class="px-5 py-4">
-            <h2 class="font-semibold text-slate-800">Semua Pendaftaran <span class="text-slate-400 font-medium"><?php echo e($orders_count); ?></span></h2>
+            <h2 class="font-semibold text-slate-800">Semua Pendaftaran <span class="text-slate-400 font-medium">{{ $orders_count }}</span></h2>
         </header>
         <!-- Table -->
         <div class="overflow-x-auto">
@@ -96,44 +68,44 @@
                     </tr>
                 </thead>
                 <!-- Table body -->
-                <?php $__currentLoopData = $orders; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $order): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <?php                    
+                @foreach($orders as $order)
+                    @php                    
                         if ($order->status === 'Sudah Diproses') :
                             $status_color = 'bg-emerald-100 text-emerald-600';
                         else :
                             $status_color = 'bg-amber-100 text-amber-500';
                         endif;
-                    ?>
+                    @endphp
                     <tbody class="text-sm">
                         <!-- Row -->
                         <tr>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div><?php echo e(\Carbon\Carbon::parse($order->date)->format('d/m/Y')); ?></div>
+                                <div>{{ \Carbon\Carbon::parse($order->date)->format('d/m/Y') }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="font-medium text-slate-800"><?php echo e($order->name); ?></div>
+                                <div class="font-medium text-slate-800">{{ $order->name }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="font-medium text-slate-800"><?php echo e($order->email); ?></div>
+                                <div class="font-medium text-slate-800">{{ $order->email }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="font-medium text-slate-800"><?php echo e($order->phone_number); ?></div>
+                                <div class="font-medium text-slate-800">{{ $order->phone_number }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="font-medium text-slate-800"><?php echo e($order->store_name); ?></div>
+                                <div class="font-medium text-slate-800">{{ $order->store_name }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="font-medium text-slate-800"><?php echo e($order->location); ?></div>
+                                <div class="font-medium text-slate-800">{{ $order->location }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="text-left font-semibold text-blue-500"><?php echo e($order->packet->name); ?></div>
+                                <div class="text-left font-semibold text-blue-500">{{ $order->packet->name }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="inline-flex font-medium rounded-full text-center px-2.5 py-0.5 <?php echo e($status_color); ?>"><?php echo e($order->status); ?></div>
+                                <div class="inline-flex font-medium rounded-full text-center px-2.5 py-0.5 {{$status_color}}">{{ $order->status }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                                 <div class="space-x-1 flex">
-                                    <a href="<?php echo e(route('pendaftaran.edit', $order->id)); ?>">
+                                    <a href="{{ route('pendaftaran.edit', $order->id) }}">
                                         <button class="text-slate-400 hover:text-slate-500 rounded-full">
                                             <span class="sr-only">Edit</span>
                                             <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
@@ -145,7 +117,7 @@
                             </td>
                         </tr>
                     </tbody>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                @endforeach
             </table>
 
         </div>
@@ -153,8 +125,6 @@
 
     <!-- Pagination -->
     <div class="mt-8">
-        <?php echo e($orders->links()); ?>
-
+        {{$orders->links()}}
     </div>
 </div>
-<?php /**PATH C:\laragon\www\main-saraba-bisa\resources\views/livewire/pendaftaran.blade.php ENDPATH**/ ?>

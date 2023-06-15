@@ -302,11 +302,7 @@
                       Untuk pelanggan
                     </div>
                     <div class="text-gray-600">
-                      Perkembangan teknologi digital semakin maju, pemilik
-                      usaha kecil maupun besar sangat memerlukan pencatatan
-                      keuangan yang mudah dioperasikan dan tidak ribet.
-                      Sehingga kami membantu solusi tersebut untuk
-                      memenuhi kebutuhan Anda.
+                      Pelanggan Anda dapat dengan mudah melakukan tracking servis melalui web secara mandiri tanpa harus menghubungi Anda.
                     </div>
                   </div>
                   <div
@@ -524,7 +520,26 @@
                     Cetak nota
                   </div>
                   <div class="text-slate-500 mb-3">
-                    Dapat mencetak nota servis dan penjualan
+                    Dapat mencetak nota servis dan penjualan dalam format printer thermal serta printer inkjet.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
+              >
+                <img
+                  class="mb-3"
+                  src="<?php echo e(asset('images/fitur-14.svg')); ?>"
+                  width="56"
+                  height="56"
+                  alt="Icon 04"
+                />
+                <div class="grow">
+                  <div class="font-hkgrotesk font-bold text-xl">
+                    Point of Sales (POS)
+                  </div>
+                  <div class="text-slate-500 mb-3">
+                    Penjualan produk menggunakan sistem POS dengan fitur diskon, pencetakan satu nota dengan banyak item produk, pengelolaan transaksi pembayaran lunas dan tempo.
                   </div>
                 </div>
               </div>
