@@ -27,15 +27,26 @@
               class="relative flex flex-col h-full py-8 px-6 rounded bg-white shadow-xl"
             >
               <div class="mb-4">
-                <div class="flex justify-between items-center mb-1">
-                  <div class="text-lg font-bold mb-1">{{ $basic->name }} <span class="line-through text-red-600">Rp. {{ number_format($basic->price) }} / tahun</span></div>
-                  <div class="inline-flex px-3 py-1 text-xs font-medium text-green-600 bg-green-200 rounded-full">-{{ $basic->diskon }}%</div>
-                </div>
-                <div class="inline-flex items-baseline mb-2">
-                  <span class="text-3xl font-bold">Rp</span>
-                  <span class="text-4xl font-bold">{{ number_format($basic->price - (($basic->price/100) * $basic->diskon)) }}</span>
-                  <span class="text-gray-600 pl-2">/ tahun</span>
-                </div>
+                @if ($basic->diskon != null)
+                    <div class="flex justify-between items-center mb-1">
+                      <div class="text-lg font-bold mb-1">{{ $basic->name }} <span class="line-through text-red-600">Rp. {{ number_format($basic->price) }} / tahun</span></div>
+                      <div class="inline-flex px-3 py-1 text-xs font-medium text-green-600 bg-green-200 rounded-full">-{{ $basic->diskon }}%</div>
+                    </div>
+                    <div class="inline-flex items-baseline mb-2">
+                      <span class="text-3xl font-bold">Rp</span>
+                      <span class="text-4xl font-bold">{{ number_format($basic->price - (($basic->price/100) * $basic->diskon)) }}</span>
+                      <span class="text-gray-600 pl-2">/ tahun</span>
+                    </div>
+                @else
+                    <div class="flex justify-between items-center mb-1">
+                      <div class="text-2xl text-blue-600 font-bold mb-1">{{ $basic->name }}</div>
+                    </div>
+                    <div class="inline-flex items-baseline mb-2">
+                      <span class="text-3xl font-bold">Rp</span>
+                      <span class="text-4xl font-bold">{{ number_format($basic->price) }}</span>
+                      <span class="text-gray-600 pl-2">/ tahun</span>
+                    </div>
+                @endif
                 <div class="text-lg text-gray-800">
                   {{ $basic->description }}
                 </div>
@@ -84,15 +95,26 @@
                   </svg>
               </div>
               <div class="mb-4">
-                <div class="flex justify-between items-center mb-1">
-                  <div class="text-lg font-bold mb-1">{{ $premium->name }} <span class="line-through text-red-600">Rp. {{ number_format($premium->price) }} / tahun</span></div>
-                  <div class="inline-flex px-3 py-1 text-xs font-medium text-green-600 bg-green-200 rounded-full">-{{ $premium->diskon }}%</div>
-                </div>
-                <div class="inline-flex items-baseline mb-2">
-                  <span class="text-3xl font-bold">Rp</span>
-                  <span class="text-4xl font-bold">{{ number_format($premium->price - (($premium->price/100) * $premium->diskon)) }}</span>
-                  <span class="text-gray-600 pl-2">/ tahun</span>
-                </div>
+                @if ($premium->diskon != null)
+                    <div class="flex justify-between items-center mb-1">
+                      <div class="text-lg font-bold mb-1">{{ $premium->name }} <span class="line-through text-red-600">Rp. {{ number_format($premium->price) }} / tahun</span></div>
+                      <div class="inline-flex px-3 py-1 text-xs font-medium text-green-600 bg-green-200 rounded-full">-{{ $premium->diskon }}%</div>
+                    </div>
+                    <div class="inline-flex items-baseline mb-2">
+                      <span class="text-3xl font-bold">Rp</span>
+                      <span class="text-4xl font-bold">{{ number_format($premium->price - (($premium->price/100) * $premium->diskon)) }}</span>
+                      <span class="text-gray-600 pl-2">/ tahun</span>
+                    </div>
+                @else
+                    <div class="flex justify-between items-center mb-1">
+                      <div class="text-2xl text-blue-600 font-bold mb-1">{{ $premium->name }}</div>
+                    </div>
+                    <div class="inline-flex items-baseline mb-2">
+                      <span class="text-3xl font-bold">Rp</span>
+                      <span class="text-4xl font-bold">{{ number_format($premium->price) }}</span>
+                      <span class="text-gray-600 pl-2">/ tahun</span>
+                    </div>
+                @endif
                 <div class="text-lg text-gray-800">
                   {{ $premium->description }}
                 </div>
