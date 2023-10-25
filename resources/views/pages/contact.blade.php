@@ -193,6 +193,24 @@
                 0821-6816-6668
               </a>
             </div>
+            <!-- 2st item -->
+            <div
+              class="relative flex flex-col p-6 bg-white rounded shadow-xl"
+              data-aos="zoom-y-out"
+              data-aos-anchor="[data-aos-id-blocks]"
+            >
+              <h4
+                class="text-xl font-bold leading-snug tracking-tight mb-1"
+              >
+                Haiqal
+              </h4>
+              <p class="text-gray-600">
+                Kalimantan Selatan
+              </p>
+              <a href="https://wa.me/6281348591112" target="_blank" class="text-blue-600 mt-1">
+                0813-4859-1112
+              </a>
+            </div>
           </div>
         </div>
       </div>

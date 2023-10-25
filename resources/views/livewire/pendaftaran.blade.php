@@ -80,7 +80,7 @@
                         <!-- Row -->
                         <tr>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div>{{ \Carbon\Carbon::parse($order->date)->format('d/m/Y') }}</div>
+                                <div>{{ \Carbon\Carbon::parse($order->created_at)->format('d/m/Y') }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                 <div class="font-medium text-slate-800">{{ $order->name }}</div>
