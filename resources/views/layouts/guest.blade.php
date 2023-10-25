@@ -276,8 +276,7 @@
             <div class="sm:col-span-6 md:col-span-3">
               <h6 class="text-gray-800 font-medium mb-2">Hubungi Kami</h6>
               <p class="text-sm text-gray-600 mb-4">
-                Jl. Negara Dipa Kec. Amuntai Tengah, Kab. Hulu Sungai Utara,
-                Prov. Kalimantan Selatan
+                Jl. Gusti Saputra RT. 08 No. 53 Kel. Antasari, Kec. Amuntai Tengah, Kab. Hulu Sungai Utara, Prov. Kalimantan Selatan
               </p>
             </div>
           </div>
@@ -331,7 +330,7 @@
 
             <!-- Copyrights note -->
             <div class="text-sm text-gray-600 mr-4">
-              &copy; Saraba Bisa. All rights reserved.
+              &copy; CV. Maju Jaya Bahagia. All rights reserved.
             </div>
           </div>
         </div>

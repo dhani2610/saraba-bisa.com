@@ -77,8 +77,7 @@
                 Alamat Kantor
               </h4>
               <p class="text-gray-600">
-                Jl. Negara Dipa RT. 8 No. 6 Kel. Sungai Malang, Kec. Amuntai
-                Tengah, Kab. Hulu Sungai Utara, Prov. Kalimantan Selatan
+                Jl. Gusti Saputra RT. 08 No. 53 Kel. Antasari, Kec. Amuntai Tengah, Kab. Hulu Sungai Utara, Prov. Kalimantan Selatan (71411)
               </p>
             </div>
 
@@ -123,10 +122,8 @@
               >
                 Whatsapp
               </h4>
-              <p class="text-gray-600">
-                M Hairil Hidayat : 0811801799 <br />
-                Muhammad Khaidir : 081938960028
-              </p>
+              <a href="https://wa.me/62811801799" target="_blank" class="text-gray-600 mt-1">M Hairil Hidayat : <span class="text-blue-600">0811-8017-99</span></a>
+              <a href="https://wa.me/6281938960028" target="_blank" class="text-gray-600 mt-1">Muhammad Khaidir : <span class="text-blue-600">0819-3896-0028</span></a>
             </div>
 
             <!-- 3rd item -->
@@ -165,9 +162,44 @@
               >
                 Group Facebook
               </h4>
+              <a href="https://web.facebook.com/groups/742804304240831/" target="_blank" class="text-gray-600">Saraba Bisa</a>
+            </div>
+          </div>
+
+          <!-- Section reseller -->
+          <div class="max-w-3xl mx-auto text-center py-12 md:py-16">
+            <h1 class="h1 mb-4" data-aos="zoom-y-out">Reseller kami</h1>
+            <p
+              class="text-xl text-gray-600"
+              data-aos="zoom-y-out"
+              data-aos-delay="150"
+            >
+              Anda juga bisa menghubungi Reseller kami yang ada di daerah Anda untuk mendapatkan bantuan yang lebih optimal.
+            </p>
+          </div>
+
+          <!-- Reseller -->
+          <div
+            class="max-w-sm mx-auto grid gap-6 md:max-w-2xl lg:max-w-none"
+            data-aos-id-blocks
+          >
+            <!-- 1st item -->
+            <div
+              class="relative flex flex-col p-6 bg-white rounded shadow-xl"
+              data-aos="zoom-y-out"
+              data-aos-anchor="[data-aos-id-blocks]"
+            >
+              <h4
+                class="text-xl font-bold leading-snug tracking-tight mb-1"
+              >
+                Lucas / Mr. Hawaii
+              </h4>
               <p class="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Kalimantan Timur
               </p>
+              <a href="https://wa.me/6282168166668" target="_blank" class="text-blue-600 mt-1">
+                0821-6816-6668
+              </a>
             </div>
           </div>
         </div>

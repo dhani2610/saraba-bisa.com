@@ -642,27 +642,6 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-11.svg') }}"
-                  width="56"
-                  height="56"
-                  alt="Icon 04"
-                />
-                <div class="grow">
-                  <div class="font-hkgrotesk font-bold text-xl">
-                    Alokasi dana backup
-                  </div>
-                  <div class="text-slate-500 mb-3">
-                    Dapat mengalokasikan dana backup hasil dari profit
-                    servis, dan dapat menginput insiden yang dilakukan
-                    teknisi saat pengerjaan servis
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded"
-              >
-                <img
-                  class="mb-3"
                   src="{{ asset('images/fitur-12.svg') }}"
                   width="56"
                   height="56"

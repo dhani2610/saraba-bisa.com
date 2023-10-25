@@ -532,41 +532,6 @@
                 <!-- Row -->
                 <tr class="border-t border-gray-200">
                   <td class="text-sm sm:text-base pr-2 py-4">
-                    <div class="font-medium underline">
-                      Alokasi Dana Backup
-                    </div>
-                    <div class="text-gray-600">
-                      Dapat mengalokasikan dana backup hasil dari profit
-                      servis, dan dapat menginput insiden yang dilakukan
-                      teknisi saat pengerjaan servis
-                    </div>
-                  </td>
-                  <td class="text-sm px-2 py-4 text-center font-medium">
-                    <svg
-                      class="w-3 h-3 fill-current text-gray-400 opacity-75 inline-flex"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.72 1.293a1 1 0 00-1.415 0L6.012 4.586 2.72 1.293a1 1 0 00-1.414 1.414L4.598 6 1.305 9.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L7.426 6l3.293-3.293a1 1 0 000-1.414z"
-                      />
-                    </svg>
-                  </td>
-                  <td class="text-sm px-2 py-4 text-center font-medium">
-                    <svg
-                      class="w-3 h-3 fill-current text-green-500 inline-flex"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"
-                      />
-                    </svg>
-                  </td>
-                </tr>
-                <!-- Row -->
-                <tr class="border-t border-gray-200">
-                  <td class="text-sm sm:text-base pr-2 py-4">
                     <div class="font-medium underline">Cetak slip gaji</div>
                     <div class="text-gray-600">
                       Dapat mencetak slip gaji dan mengakumulasi bonus
