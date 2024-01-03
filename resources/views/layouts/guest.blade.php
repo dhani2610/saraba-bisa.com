@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <title>{{ config('app.name', 'Saraba Bisa') }}</title>
+    <meta name="description" content="Sistem Manajemen Toko Servis dan Penjualan">
     
     <!-- Styles -->
     @livewireStyles
