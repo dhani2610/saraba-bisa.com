@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderEmail;
 use App\Models\Order;
 use App\Models\Packet;
 use Illuminate\Http\Request;
+use App\Mail\OrderNotification;
+use Illuminate\Support\Facades\Mail;
 
 class SubscribeController extends Controller
 {
@@ -20,7 +23,7 @@ class SubscribeController extends Controller
 
         Order::create($data);
 
-        return redirect()->route('register-success');
+        return redirect()->route('kirim-email');
     }
 
     public function checkout()

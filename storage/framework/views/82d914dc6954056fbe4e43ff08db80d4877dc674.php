@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     
     <title><?php echo e(config('app.name', 'Saraba Bisa')); ?></title>
+    <meta name="description" content="Sistem Manajemen Toko Servis dan Penjualan">
     
     <!-- Styles -->
     <?php echo \Livewire\Livewire::styles(); ?>
@@ -188,10 +189,8 @@
         </div>
       </header>
 
-        <main>
-            <?php echo e($slot); ?>
+        <?php echo e($slot); ?>
 
-        </main>
 
       <!-- Site footer -->
       <footer>

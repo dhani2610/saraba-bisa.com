@@ -188,9 +188,7 @@
         </div>
       </header>
 
-        <main>
-            {{ $slot }}
-        </main>
+        {{ $slot }}
 
       <!-- Site footer -->
       <footer>

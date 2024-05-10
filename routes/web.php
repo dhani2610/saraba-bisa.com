@@ -11,6 +11,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\kirimEmailController;
 use App\Http\Controllers\PacketController;
 use App\Http\Controllers\SubscribeController;
 use App\Http\Controllers\TransactionController;
@@ -33,6 +34,7 @@ Route::get('/subscribe', [SubscribeController::class, 'index'])->name('subscribe
 Route::post('/subscribe', [SubscribeController::class, 'store'])->name('submit-subscribe');
 Route::get('/checkout', [SubscribeController::class, 'checkout'])->name('checkout');
 Route::get('/register-success', [SubscribeController::class, 'success'])->name('register-success');
+Route::get('berhasil-daftar', [kirimEmailController::class, 'index'])->name('kirim-email');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
