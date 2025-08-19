@@ -1,4 +1,12 @@
-<x-guest-layout>
+<?php if (isset($component)) { $__componentOriginalc3251b308c33b100480ddc8862d4f9c79f6df015 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\GuestLayout::class, [] + (isset($attributes) ? (array) $attributes->getIterator() : [])); ?>
+<?php $component->withName('guest-layout'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $constructor = (new ReflectionClass(App\View\Components\GuestLayout::class))->getConstructor()): ?>
+<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
   <!-- Page content -->
   <main class="grow">
     <!-- Hero -->
@@ -60,13 +68,7 @@
               <div
                 class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
               >
-                {{-- <div>
-                  <a
-                    class="btn-custom text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="{{ route('subscribe') }}"
-                    >Mulai Uji Coba Gratis</a
-                  >
-                </div> --}}
+                
                 <div>
                   <a
                     class="btn-custom text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
@@ -87,7 +89,7 @@
               <div class="flex flex-col justify-center">
                 <img
                   class="mx-auto rounded shadow-xl"
-                  src="{{ asset('images/hero-image.png') }}"
+                  src="<?php echo e(asset('images/hero-image.png')); ?>"
                   width="768"
                   height="432"
                   alt="Hero"
@@ -339,7 +341,7 @@
                   <div class="relative inline-flex flex-col">
                     <img
                       class="md:max-w-none mx-auto rounded"
-                      src="{{ asset('images/why-1.png') }}"
+                      src="<?php echo e(asset('images/why-1.png')); ?>"
                       width="500"
                       height="375"
                       alt="Features bg"
@@ -360,7 +362,7 @@
                   <div class="relative inline-flex flex-col">
                     <img
                       class="md:max-w-none mx-auto rounded"
-                      src="{{ asset('images/why-2.png') }}"
+                      src="<?php echo e(asset('images/why-2.png')); ?>"
                       width="500"
                       height="375"
                       alt="Features bg"
@@ -381,7 +383,7 @@
                   <div class="relative inline-flex flex-col">
                     <img
                       class="md:max-w-none mx-auto rounded"
-                      src="{{ asset('images/why-3.png') }}"
+                      src="<?php echo e(asset('images/why-3.png')); ?>"
                       width="500"
                       height="375"
                       alt="Features bg"
@@ -420,7 +422,7 @@
               <div class="swiper-slide h-auto flex flex-col border-2 border-gray-200 p-6 rounded">
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-1.svg') }}"
+                  src="<?php echo e(asset('images/fitur-1.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 01"
@@ -441,7 +443,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-2.svg') }}"
+                  src="<?php echo e(asset('images/fitur-2.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 02"
@@ -461,7 +463,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-3.svg') }}"
+                  src="<?php echo e(asset('images/fitur-3.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 03"
@@ -481,7 +483,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-4.svg') }}"
+                  src="<?php echo e(asset('images/fitur-4.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -502,7 +504,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-5.svg') }}"
+                  src="<?php echo e(asset('images/fitur-5.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -521,7 +523,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-14.svg') }}"
+                  src="<?php echo e(asset('images/fitur-14.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -540,7 +542,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-6.svg') }}"
+                  src="<?php echo e(asset('images/fitur-6.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -561,7 +563,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-7.svg') }}"
+                  src="<?php echo e(asset('images/fitur-7.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -581,7 +583,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-8.svg') }}"
+                  src="<?php echo e(asset('images/fitur-8.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -602,7 +604,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-9.svg') }}"
+                  src="<?php echo e(asset('images/fitur-9.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -622,7 +624,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-10.svg') }}"
+                  src="<?php echo e(asset('images/fitur-10.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -642,7 +644,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-12.svg') }}"
+                  src="<?php echo e(asset('images/fitur-12.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -663,7 +665,7 @@
               >
                 <img
                   class="mb-3"
-                  src="{{ asset('images/fitur-13.svg') }}"
+                  src="<?php echo e(asset('images/fitur-13.svg')); ?>"
                   width="56"
                   height="56"
                   alt="Icon 04"
@@ -743,7 +745,7 @@
               <div>
                 <a
                   class="btn-custom text-blue-600 bg-gradient-to-r from-blue-100 to-white"
-                  href="{{ route('pricing') }}"
+                  href="<?php echo e(route('pricing')); ?>"
                   >Lihat Paket</a
                 >
               </div>
@@ -753,7 +755,7 @@
       </div>
     </section>
   </main>
-  <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+  <script src="<?php echo e(asset('js/swiper-bundle.min.js')); ?>"></script>
   <script>
     const carouselEl = document.querySelectorAll(".carousel");
     if (carouselEl.length > 0) {
@@ -784,4 +786,9 @@
         });
     }
   </script>
-</x-guest-layout>
+ <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalc3251b308c33b100480ddc8862d4f9c79f6df015)): ?>
+<?php $component = $__componentOriginalc3251b308c33b100480ddc8862d4f9c79f6df015; ?>
+<?php unset($__componentOriginalc3251b308c33b100480ddc8862d4f9c79f6df015); ?>
+<?php endif; ?><?php /**PATH C:\xampp\htdocs\saraba-bisa.com\resources\views/pages/home.blade.php ENDPATH**/ ?>

@@ -23,7 +23,7 @@
             class="max-w-sm md:max-w-2xl xl:max-w-none mx-auto grid gap-8 md:grid-cols-2 xl:gap-6 items-start"
           >
             <!-- Paket Basic -->
-            <div
+            {{-- <div
               class="relative flex flex-col h-full py-8 px-6 rounded bg-white shadow-xl"
             >
               <div class="mb-4">
@@ -84,7 +84,7 @@
                   >Coba Demo Basic</a
                 >
               </div>
-            </div>
+            </div> --}}
             <!-- Paket Premium -->
             <div
               class="relative flex flex-col h-full py-8 px-6 rounded bg-white shadow-xl"
