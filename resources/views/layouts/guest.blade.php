@@ -74,7 +74,7 @@
               </ul>
 
               <!-- Desktop sign in links -->
-              <ul class="flex grow justify-end flex-wrap items-center">
+              {{-- <ul class="flex grow justify-end flex-wrap items-center">
                 <li>
                   <a
                     class="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
@@ -93,7 +93,7 @@
                     </svg>
                   </a>
                 </li>
-              </ul>
+              </ul> --}}
             </nav>
 
             <!-- Mobile menu -->
@@ -162,7 +162,7 @@
                       >Kontak</a
                     >
                   </li>
-                  <li>
+                  {{-- <li>
                     <a
                       class="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2"
                       href="{{ route('subscribe') }}"
@@ -180,7 +180,7 @@
                         />
                       </svg>
                     </a>
-                  </li>
+                  </li> --}}
                 </ul>
               </nav>
             </div>
@@ -224,14 +224,14 @@
             <div class="sm:col-span-6 md:col-span-3">
               <h6 class="text-gray-800 font-medium mb-2">Demo</h6>
               <ul class="text-sm">
-                <li class="mb-2">
+                {{-- <li class="mb-2">
                   <a
                     class="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                     href="https://demo-basic.saraba-bisa.com/login"
                     target="_blank"
                     >Paket Basic</a
                   >
-                </li>
+                </li> --}}
                 <li class="mb-2">
                   <a
                     class="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
